@@ -90,7 +90,7 @@ export const SignIn = () => {
 
   return (
     <div className="home">
-      <span className="flex"><img src={logo} alt="VocalNest Logo" width={100} height={100} className="logo" /><h1>Welcome to VocalNest</h1> </span>
+      <span className="flex"><img src={logo} alt="VocalNest Logo" width={100} height={100} className="logo" /><h1>Welcome to VocalClub</h1> </span>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label>Username: </label>

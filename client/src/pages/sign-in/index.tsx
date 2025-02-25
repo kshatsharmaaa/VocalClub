@@ -39,8 +39,8 @@ export const SignIn = () => {
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     const { username, name } = data;
-// prev api : http://localhost:3001
-    const response = await fetch("/api/auth/createUser", {
+    const API_URL = "https://vocal-club.vercel.app/sign-in"
+    const response = await fetch(`${API_URL}/auth/createUser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
